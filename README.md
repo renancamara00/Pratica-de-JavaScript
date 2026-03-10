@@ -87,13 +87,53 @@ numéricos na ordem que foram inseridos. Por exemplo: calculadora (2, ‘+’, 3
 3 . Dica: Os sinais das operações são: ‘+’. ‘-’, ‘*’ e ‘/’.  Crie um caso default para operações inválidas. 
 
 17) Um funcionário irá receber um aumento de acordo com o seu plano de 
-trabalho, de acordo com a tabela abaixo:  
-Plano Aumento 
-A 10% 
-B 15% 
-C 20% 
+trabalho, de acordo com a tabela abaixo: 
+
+| Plano | Aumento |
+| :--- |:--- | 
+| A | 10% | 
+| B | 15% |
+| C | 20% | 
+
 Faça uma função que leia o plano de trabalho e o salário atual de um funcionário e calcula e imprime o seu 
 novo salário. Use a estrutura switch e faça um caso default que indique que o plano é inválido. 
 
 18) Faça um programa que leia um número entre 0 e 10, e escreva este número por extenso. Use o comando 
 switch. Crie um case default que escreva ‘Número fora do intervalo.’ 
+
+19) O cardápio de uma lanchonete é o seguinte: 
+
+| Código | Descrição do Produto | Preço |
+| :--- | :--- | :--- |
+| 100 | Cachorro Quente | R$ 3,00 |
+| 200 | Hambúrguer Simples | R$ 4,00 |
+| 300 | Cheeseburguer | R$ 5,50 |
+| 400 | Bauru | R$ 7,50 |
+| 500 | Refrigerante | R$ 3,50 |
+| 600 | Suco | R$ 2,80 |       
+ 
+
+Implemente uma  função que receba como parâmetros o código do item pedido, a quantidade e calcule o valor 
+a ser pago por aquele lanche. Considere que a cada execução somente será calculado um item. Use o 
+comando switch. Crie um caso default para produto não existente.
+
+20) Crie um programa para informar quais e quantas notas são necessárias para entregar o mínimo de cédulas 
+para um determinado valor informado pelo usuário considerando notas de R$ 100, R$ 50, R$ 10 e R$ 5 e R$ 1. 
+Seu programa deve mostrar apenas as notas utilizadas. Por exemplo, ao solicitar R$18, o programa deve 
+informar apenas a seguinte informação (note que não foram exibidas informações sobre as demais cédulas): 1 
+nota(s) de R$ 10. 1 nota(s) de R$ 5. 3 nota(s) de R$ 1.
+
+21) Criar um programa para identificar o valor a ser pago por um plano de saúde dada a idade do conveniado 
+considerando que todos pagam R$ 100 mais um adicional conforme a seguinte tabela: 1) crianças com menos 
+de 10 anos pagam R$80; 2) conveniados com idade entre 10 e 30 anos pagam R$50; 3) conveniados com 
+idade acima de  30 e até 60 anos pagam R$ 95; e 4) conveniados acima de 60 anos pagam R$130
+
+22) Criar uma função para calcular o valor a ser pago de anuidade de uma associação. A função recebe como 
+parâmetro um inteiro que representa o mês (1 - janeiro, 2 - fevereiro…) que foi paga e o valor da anuidade. A 
+anuidade deve ser paga no mês de janeiro. Por mês, é cobrado 5% de juros (sob o regime de juros 
+compostos). O retorno deve ser o valor a ser pago para o respectivo mês escolhido. 
+
+23) Escreva um algoritmo que leia o código de um aluno e suas três notas. Calcule a média ponderada do 
+aluno, considerando que o peso para a maior nota seja 4 e para as duas restantes, 3. Mostre o código do 
+aluno, suas três notas, a média calculada e uma mensagem "APROVADO" se a média for maior ou igual a 5 e 
+"REPROVADO" se a média for menor que 5. Repita a operação até que o código lido seja negativo.
