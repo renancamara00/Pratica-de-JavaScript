@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Tabuada Simples</title>
+    <style>
+        body { font-family: sans-serif; display: flex; justify-content: center; padding: 20px; }
+        .container { border: 1px solid #ccc; padding: 20px; border-radius: 8px; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); }
+        input { padding: 8px; width: 60px; margin-bottom: 10px; }
+        button { padding: 8px 15px; cursor: pointer; background: #28a745; color: white; border: none; border-radius: 4px; }
+        #resultado { margin-top: 15px; line-height: 1.6; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Gerador de Tabuada</h2>
+    <input type="number" id="num" placeholder="Ex: 5">
+    <button onclick="gerarTabuada()">Gerar</button>
+
+    <div id="resultado"></div>
+</div>
+
+<script>
+    function gerarTabuada() {
+        let num = document.getElementById('num').value;
+        let res = document.getElementById('resultado');
+        
+        if (num === "") {
+            res.innerHTML = "Por favor, digite um número.";
+            return;
+        }
+
+        let conteudo = `<h3>Tabuada do ${num}</h3>`;
+        for (let i = 1; i <= 10; i++) {
+            conteudo += `${num} x ${i} = <strong>${num * i}</strong><br>`;
+        }
+        res.innerHTML = conteudo;
+    }
+</script>
+
+</body>
+</html>
