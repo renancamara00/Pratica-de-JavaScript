@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Pratica de javaScript.
 Praticar o fluxo do github
 
